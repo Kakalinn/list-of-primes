@@ -54,8 +54,5 @@ int isp(ll n)
 int main()
 { // slowly finds all primes larger then |x| using first Miller-Rabin and then a slower deterministic check.
 	ll x;
-	for (scanf("%lld", &x);; x++)
-	{
-		if (ispp(x) && isp(x)) printf("%lld\n", x);
-	}
+	for (scanf("%lld", &x);; x++) if (ispp(x) && isp(x)) printf("%lld\n", x);
 }
